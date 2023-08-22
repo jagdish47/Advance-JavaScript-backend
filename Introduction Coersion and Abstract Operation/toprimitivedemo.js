@@ -16,6 +16,13 @@ let objTwo = {
 };
 // console.log(objTwo.toString());
 
+let valueOver = {
+  valueOf() {
+    return "Hey, We have override the valueOf() function";
+  },
+};
+console.log(valueOver.valueOf());
+
 let objThree = {
   toString(arg1) {
     return arg1;
@@ -59,3 +66,19 @@ console.log(10 + obj4); //string than concatination, number than addition, objec
 console.log(+10); //10
 console.log(+"10"); //10
 console.log(+"hey"); //NaN
+
+let ans =
+  "10" +
+  {
+    x: 10,
+    toString() {
+      return "Hola";
+    },
+
+    valueOf() {
+      return 5;
+    },
+  };
+
+console.log("Answer is : " + ans);
+console.log(typeof ans);
