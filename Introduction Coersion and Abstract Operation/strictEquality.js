@@ -27,3 +27,11 @@ console.log(+0 === -0); //true
 console.log(!!-0); //false
 
 console.log({} == {}); //false
+
+let obj1 = { x: 10 };
+let obj2 = { x: 20 };
+let obj3 = { x: 20 };
+
+console.log(obj1 === obj2); //false
+console.log(obj1 === obj3); //false
+console.log(obj1 === obj1); //true
