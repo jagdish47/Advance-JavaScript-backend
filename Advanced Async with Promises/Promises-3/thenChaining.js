@@ -22,6 +22,9 @@ Promise.resolve("foo")
   });
 
 /**
+ * Inside then is a fullfillment and rejection functin of promise that it
+ *
+ *
  *[We are directly resolving the promise with value foo]
  * {
  *  value : "foo",
